@@ -1,1 +1,1 @@
-# StringModificationInclTests
+# StringModificationInclTests Simple methods to modify strings in C# to practise unit testing.
