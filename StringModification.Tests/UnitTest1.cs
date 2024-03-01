@@ -11,9 +11,6 @@ namespace StringModification.Tests
         {
             string backwordsString = stringMethods.StringBackwards(originalString);
             Assert.Equal(expected, backwordsString);
-
-            backwordsString = stringMethods.StringBackwards(originalString);
-            Assert.Equal(expected, backwordsString);
         }
         [Theory]
         [InlineData("Alabama", "alabama")]
@@ -22,9 +19,6 @@ namespace StringModification.Tests
         {
             string allLowerCaseString = stringMethods.StringToAllLowerCase(originalString);
             Assert.Equal(expected, allLowerCaseString);
-
-            allLowerCaseString = stringMethods.StringToAllLowerCase(originalString);
-            Assert.Equal(expected, allLowerCaseString);
         }
         [Theory]
         [InlineData("Alabama", "ALABAMA")]
@@ -32,9 +26,6 @@ namespace StringModification.Tests
         public void TestAllUpperCase(string originalString, string expected)
         {
             string allUpperCaseString = stringMethods.StringToAllCaps(originalString);
-            Assert.Equal(expected, allUpperCaseString);
-
-            allUpperCaseString = stringMethods.StringToAllCaps(originalString);
             Assert.Equal(expected, allUpperCaseString);
         }
     }
